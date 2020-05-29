@@ -1,0 +1,257 @@
+/*------------------------------------------------------------------Bases----------------------------------------------------*/
+*{
+    margin: 0;
+}
+
+html{
+    background: url(../assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body{
+    background-color: rgba(255,255,255, 0.5);
+    margin:0;    
+    font-family: "Orbitron", sans-serif;
+}
+
+
+section, form{
+    padding: 20px;
+}
+
+fieldset{
+    margin: 0 -10px;
+}
+
+
+#contenu{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.pair{
+    background-color: rgba(97, 97, 97, 0.3);
+}
+
+.impair{
+    background-color: rgba(6, 7, 68, 0.25);
+}
+
+/*------------------------------------------------------------------Header---------------------------------------------------*/
+header{
+    background-image: url(../assets/bandeau.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    box-shadow: rgb(50,50,50) 1px 5px 5px;
+}
+
+header img{
+height: 150px;
+}
+
+header nav{
+    flex:2;
+    display: flex;
+    margin: 0 5%;
+    justify-content: space-evenly;
+}
+
+nav a{
+    text-align: center;
+    width: 90px;
+    padding: 5px 3px;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(225, 225, 225);
+    border: rgb(150, 150, 150) 1px solid;
+    border-radius: 5px;
+    font-family: 'VT323', monospace;
+}
+
+nav a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+nav a:active{
+    color: rgb(225, 225, 225);
+    background-color: rgb(25, 25, 25);
+    border: rgb(100, 100, 100) 1px solid;    
+}
+
+/*------------------------------------------------------------------Carte de Visite------------------------------------------*/
+#overflowed{
+    position: sticky;
+    top: 20px;
+    margin-top: 10px;
+    height: 0px;
+}
+
+#carteDeVisite{
+    display: flex;
+    position: absolute;
+    right: 1px;
+    width: 150px;
+    align-items: center ;
+    flex-direction: column;
+}
+
+#carteDeVisite img{
+    content: url(../assets/infos.png);
+    background-color: rgba(255,255,255, 0.75);
+    border-radius: 50%;
+    box-shadow: rgba(0,0,0, 0.8) 0 0 5px;
+    width: 50%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+#carte{
+    border: rgba(50,50,50, 1) solid 1px;
+    border-radius: 5px;
+    background-color: rgba(75,75,75, 0.7);
+    box-shadow: rgba(0,0,0, 0.5) 5px 5px 5px;
+    padding: 5px;
+    display: none;
+    margin-right: 20px;
+}
+
+#carte p{
+    margin:0;
+    text-shadow: rgba(255,255,255, 1) 0.5px 0.65px 1px;
+}
+/*------------------------------------------------------------------CDV: hover-----------------------------------------------*/
+
+#carteDeVisite img:hover{
+    cursor: pointer;
+}
+
+/*------------------------------------------------------------------CDV: active----------------------------------------------*/
+
+#carteDeVisite img:active{
+    content: url(../assets/infos_active.png);
+    background-color: rgba(50,50,50, 0.75);
+    box-shadow: rgba(255,255,255, 1) 0px 0px 10px;
+}
+
+/*------------------------------------------------------------------Home-----------------------------------------------------*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+    margin-top: -7px;
+}
+
+#home h1{
+    font-size: 50px;
+}
+
+#home p{
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*------------------------------------------------------------------Atouts/Outils---------------------------------------------*/
+
+#atout_tool legend{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#atout_tool div{    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#atout_tool caption{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#atout_tool table{
+    border: solid gray 1px;
+    border-collapse: collapse;
+}
+
+#atout_tool td:last-child{
+    text-align: center;
+}
+
+#atout_tool td{
+    border-top: solid 1px grey;
+    box-shadow: white 0 0 2px;
+}
+
+/*------------------------------------------------------------------Contact--------------------------------------------------*/
+
+#contact legend{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#contact fieldset>div{
+    display: flex;
+    justify-content: center;
+
+}
+
+#label, #input{
+    display: grid;
+    grid-auto-rows: minmax(20px, auto);
+}
+ #label{
+     grid-auto-rows: minmax(auto, 26.5px);
+     margin-right: 5px;
+ }
+
+#mail, #about{
+    max-height: 21px ;
+} 
+
+#input textarea{
+    margin-bottom: 5px;
+}
+
+input[type= "submit"]{
+    width: 70px;
+    border-radius: 10px;
+    margin: 0px auto;
+    max-height: 30px;
+}
+
+/*------------------------------------------------------------------Footer---------------------------------------------------*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(6, 7, 68, 0.8);
+    padding: 10px 0;
+}
+
+footer nav{
+    flex:1;
+    display: flex;
+    margin: 0 5%;
+    justify-content: space-evenly;
+}
+
+/*------680*/
+
