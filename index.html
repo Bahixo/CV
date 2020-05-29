@@ -4,9 +4,42 @@
         <title>Joel Aliu - Curriculum Vitae</title>
         <meta http-equiv="refresh" content="5; URL=https://bahixo.github.io/CV/html/cv.html">
     </head>
+    <style type="text/css">
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgba(0, 21, 114, 0.3);
+        }
+
+        p{
+            display: inline-block;
+            font-size: 40px;
+        }
+
+        a{
+            text-decoration: none;
+            color:black;
+            border: solid 1px rgb(12, 88, 2);
+            background-color: rgba(12, 88, 2, 0.5);
+            border-radius: 10px;
+            padding:3px
+        }
+    </style>
 
     <body>
-     <p>Redirection vers <a href="html/cv.html">mon CV</a> dans 5 secondes.</p>
+     <p>Redirection vers <a href="https://bahixo.github.io/CV/html/cv.html">mon CV</a> dans <span id="timer">5</span> secondes.</p>
     </body>
+
+    <script type="text/javascript">
+        setInterval(countDown, 1000);
+        let t=5;
+        function countDown(){
+            t--;
+            document.getElementById("timer").innerHTML = t;
+        }
+            
+    </script>
 
 </html>
