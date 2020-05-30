@@ -66,6 +66,10 @@ header img{
 height: 262.5px;
 }
 
+header img:hover{
+    cursor: pointer;
+}
+
 header nav{
     flex:2;
     display: flex;
