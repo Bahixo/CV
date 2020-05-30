@@ -237,7 +237,7 @@ nav a:active{
     font-size: 25px;
 }
 
-input[type= "submit"]{
+input[value= "Valider"]{
     width: 122.5px;
     border-radius: 17.5px;
     margin: 0px auto;
