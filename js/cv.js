@@ -9,5 +9,5 @@ function card(){
 }
 
 function alertInfo(){
-    alert("Ce formulaire n'est la qu'à titre démonstratif pour l'instant.nMerci d'avoir pris le temps d'explorer mon CV.nN'hésitez pas à me contacter par mail (Voir carte de visite)")
+    alert("Ce formulaire n'est là qu'à titre démonstratif pour l'instant.\nMerci d'avoir pris le temps d'explorer mon CV.\nN'hésitez pas à me contacter par mail (Voir carte de visite)")
 }
