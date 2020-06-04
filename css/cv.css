@@ -62,16 +62,26 @@ header{
     box-shadow: rgb(50,50,50) 1.75px 8.75px 8.75px;
 }
 
-header img{
+[alt="photo de profil"]{
 height: 262.5px;
+box-shadow: rgba(0,0,0, 0.8) 0 0 8.75px;
+border: 1px black solid;
+border-radius: 5px;
 }
 
-header img:hover{
+[alt="photo de profil"]:hover{
     cursor: pointer;
 }
 
-header nav{
+[alt="photo de profil"]:active{
+    box-shadow: rgba(255,255,255, 1) 0px 0px 17.5px;
+}
+
+#menu{    
     flex:2;
+}
+
+header nav{
     display: flex;
     margin: 0 5%;
     justify-content: space-evenly;
@@ -98,6 +108,10 @@ nav a:active{
     color: rgb(225, 225, 225);
     background-color: rgb(25, 25, 25);
     border: rgb(100, 100, 100) 1.75px solid;    
+}
+
+[alt="icone de menu"]{
+    display: none;
 }
 
 /*------------------------------------------------------------------Carte de Visite------------------------------------------*/
@@ -266,5 +280,22 @@ footer nav{
     justify-content: space-evenly;
 }
 
-/*------680*/
+/*------------------------------------------------------------------Responsive Tablette/Mobile en Paysage--------------------*/
 
+@media all and (max-width:1024px){
+    body{
+        background-color: green;/*--------Repère de rupture--*/
+    }
+}
+
+/*------------------------------------------------------------------Responsive Mobile en Portrait----------------------------*/
+
+@media all and (max-width:600px){
+    body{
+        background-color: red;/*----------Repère de rupture--*/
+    }
+
+    header nav{
+        display:none;
+    }
+}
