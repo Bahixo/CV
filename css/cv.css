@@ -280,7 +280,7 @@ footer nav{
     justify-content: space-evenly;
 }
 
-/*------------------------------------------------------------------Responsive Tablette/Mobile en Paysage--------------------*/
+/*------------------------------------------------------------------Responsive Tablette/Mobile en Paysage-----------------------------------*/
 
 @media all and (max-width:1024px){
     body{
@@ -288,14 +288,64 @@ footer nav{
     }
 }
 
-/*------------------------------------------------------------------Responsive Mobile en Portrait----------------------------*/
+/*------------------------------------------------------------------Responsive Mobile en Portrait-------------------------------------------*/
 
 @media all and (max-width:600px){
     body{
-        background-color: red;/*----------Repère de rupture--*/
+        background-color: red;/*----------Repère de rupture---*/
     }
 
-    header nav{
+   /*---------------------------------------------------------------Header--------------------------------------------------*/
+   header{
+    display: block;
+
+   } 
+   header nav{
         display:none;
     }
+
+    /*---------------------------------------------------------------CDV----------------------------------------------------*/
+
+    #carteDeVisite img{
+        display: none;
+    }
+
+    #carte{
+        display: block;
+        position: absolute;
+        top: -260px;
+        right: 10px;
+        width:37vw;
+    }
+
+    #carte p{
+        color:white;
+        text-shadow: rgba(0,0,0, 1) 0.875px 1.15px 1.75px;
+        font-size: 3.5vw;
+    }
+
+    .cBig{
+        top: -100px !important;
+        right: -2px !important;
+        width: 85vw !important;
+    }
+
+    .cBig p{
+        font-size: 8vw!important;
+    }
+
+    /*---------------------------------------------------------------Home---------------------------------------------------*/
+    #home{
+        padding: 5vw;
+    }
+
+    #home h1{
+        font-size: 12vw;
+    }
+
+    #home p{
+        font-size: 7.5vw;
+        
+    }
+
 }
