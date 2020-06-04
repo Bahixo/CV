@@ -11,7 +11,7 @@ function card(){
 }
 
 function cardZoom(){
-    if(document.querySelector("body").offsetWidth<600){
+    if(document.querySelector("body").offsetWidth<=600){
         let cShape=document.getElementById("carte");
         if(cShape.className!= "cBig"){
             $("#carte").removeClass();
